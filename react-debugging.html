@@ -63,11 +63,12 @@
           // No need to change anything ABOVE this line ^
 
           return(
+            <>
             <h1>Draw a Card</h1>
-            <button onClick={}>
+            <button> onClick = {}
               Click to Draw a Card
             </button>
-            <button onClick={shuffle}>
+            <button> onClick = {shuffle} 
               Return Cards and Shuffle Deck
             </button>
             <div style={handStyles}>
@@ -79,6 +80,7 @@
                 )
               })}
             </div>
+            </>
           )
         }
       }
@@ -89,3 +91,7 @@
     </script>
   </body>
 </html>
+
+<!-- Fixed the "<>" after the return and the accompanying "</>" -->
+<!-- Found this remaining error but not able to find the fix:
+Uncaught Reference Error: shuffle is not defined at App.render  -->
